@@ -1,0 +1,93 @@
+<!DOCTYPE>
+
+<html>
+
+
+
+<head>
+
+    <title>weather</title>
+
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#submit').on('click', function () {
+
+                $('form').submit(function () {
+
+                    var input = $('#search').val();
+
+
+
+                    var wApi = "http://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=030af88a0248e796b7476f717136620e";
+
+                    $.get(wApi, function (res) {
+
+                        for (var i = 0; i < res.main.length - 1; i++);{//loop through array of objects
+
+                        }
+
+                        var F = (res.main.temp * 9/5 - 459.67);//calculating kelvin to farenheit
+
+                        console.log(F)//test
+
+                        console.log(res.main.temp); //test
+
+                        $('#test').html("<p>temperature</p>" + F + "<p>Deg Farenheit</p>")
+
+
+
+                    }, 'json');
+
+                    return false;
+
+                })
+
+            })
+
+        });
+
+    </script>
+
+</head>
+
+
+
+<body></body>
+
+<h3>Whats the weather?</h3>
+
+<div id="weatherinput">
+
+    <form action="" method="">
+
+        <!--i did not add a form tag around my inputs-->
+
+        Search <input id="search" type="text" name="search" placeholder="Search..">
+
+        <button id="submit" type="">submit</button>
+
+    </form>
+
+
+
+</div>
+
+
+
+<div id="weatheroutput">
+
+    <p id="test"></p>
+
+
+
+</div>
+
+</body>
+
+
+
+</html>

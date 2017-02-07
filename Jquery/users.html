@@ -1,0 +1,149 @@
+<html>
+
+
+
+<head>
+
+    <title>using .on</title>
+
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {//i saw king use .focus, figure out what that is: it is when you click in the input box and theres already stuff in it, it makes the stuff go away.
+
+
+
+            $('.btn').on('click', function () {
+
+                // This function has been attached as the click handler for all elements with class .btn
+
+                // and hey, there's just one in the document, and we have decided that it's purpose is
+
+                // to append the row of data to the form, so let's do that.
+
+
+
+                // First, create a string representing the HTML data for the row we want to insert:
+
+                var htmlToBeInserted = '<tr>' +
+
+                    '<td>' + $('.firstname').val() + '</td>'
+
+                    + '<td>' + $('.lastname').val() + '</td>'
+
+                    + '<td>' + $('.email').val() + '</td>'
+
+                    + '<td>' + $('.contact').val() + '</td>' +
+
+                    '</tr>'
+
+                // remember that a table looks like...
+
+                /*var firstname = <td>+ $('.firstname').val() + </td>
+
+                '<tr>'+ firtsname + lastname + '</tr>'
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>column1Hdr</th>
+
+                                <th>column2Hdr</th>
+
+                                <th>etc</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>row1 column1 data</td>
+
+                                <td>row1 column2 data</td>
+
+                                <td>etc</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                */
+
+                // Second, we want to add it to the table.
+
+                // So to add the row to the table, we put our new <tr>...stuff....</tr> into the table
+
+                //   as ****the new last child of ****   (and this is what .append() does!)
+
+                // Thus, we want to .append() it to the existing <tbody></tbody> in
+
+                //   the document: (http://api.jquery.com/append/)
+
+                //    $.append() "Insert content, specified by the parameter, to the end of each element in the set of matched elements."
+
+                var tablebody = $('tbody')
+
+
+
+                // ok, so just do it now:
+
+                tablebody.append(htmlToBeInserted);
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <h3>Using forms with JQuery</h3>
+
+    <table>
+
+        <tbody>
+
+            <tr>
+
+                <tr></tr>
+
+                <th>First Name</th>
+
+                <th>Last Name</th>
+
+                <th>Email Address</th>
+
+                <th>Contact #</th>
+
+            </tr>
+
+            <!--append data rows as <tr><td>fname</td><td>lname</td><td>email></td><td>contact</td></tr> to theads using val?-->
+
+        </tbody>
+
+    </table>
+
+    <form action='' method="post">
+
+        First name <input class="firstname" type="text" name="first_name" value=""> Last Name <input class="lastname" type="text"
+
+            name="last_name" value=""> email <input class="email" type="text" name="email" value=""> contact # <input class="contact"
+
+            type="text" name="email" value="">
+
+    </form>
+
+    <button class="btn" type="">Submit to th.</button>
+
+
+
+    </html>

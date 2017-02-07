@@ -1,0 +1,184 @@
+#wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: grey;
+  border: 1px solid black;
+}
+#topheader{
+  width: 1000px;
+  height: 70px;
+  background-color: #151616;
+}
+#logo{
+   position: relative;
+   left: 20px;
+   top: 10px;
+}
+#callus{
+   position: relative;
+   left: 850px;
+   top: -50px;
+   color: white;
+   font-size: 12px;
+}
+#listheader{
+  position: absolute;
+  width: 1000px;
+  height: 40px;
+  background-color: #4a4d51;
+  margin-top: 0px;
+  }
+#listheader ul li{
+     display: inline;
+     line-height: 15px;
+     border-left: 15px;
+     padding-right: 12px;
+     color: white;
+     border-right: 1px solid #596372;
+}
+#imgcenter{
+  border-bottom: 7px solid #3c4451;
+}
+#midcontent{
+  height: 220px;
+  background-color: #4a4d51;
+}
+#box1,#box2,#box3,#box4{
+       width: 240px;
+       height: 240px;
+       display: inline-block;
+       margin-left: 3px;
+       padding-top: -20px;
+}
+#box1 #banner{
+     font: sans-serif;
+     color: #f2a815;
+     width: 150px;
+     height: 20px;
+     text-align: right;
+     position: relative;
+     left: 30px;
+     top: 30px;
+}
+
+#leftboxparagrapf{
+  margin-left: 40px;
+  color: white;
+}
+#box2 #banner1{
+     font: sans-serif;
+     color: #f2a815;
+     width: 150px;
+     height: 20px;
+     text-align: right;
+     position: relative;
+     left: 10px;
+     top: 30px;
+}
+#leftboxparagrapf1{
+
+  margin-left: 40px;
+  color: white;
+}
+#box3 #banner2{
+     font: sans-serif;
+     color: #f2a815;
+     width: 150px;
+     height: 20px;
+     text-align: right;
+     position: relative;
+     left: 10px;
+     top: 30px;
+}
+#leftboxparagrapf2{
+
+  margin-left: 40px;
+  color: white;
+}
+#box4 #banner3{
+     font: sans-serif;
+     color: #f2a815;
+     width: 150px;
+     height: 20px;
+     text-align: right;
+     position: relative;
+     left: 10px;
+     top: 40px;
+}
+#leftboxparagrapf3{
+
+  margin-left: 40px;
+  color: white;
+}
+#content2{
+  width: 1000px;
+  height: 130px;
+  background-color: #1d1c1e;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+#buynow{
+  position: relative;
+  background-color: #e26f0b;
+  color: white;
+  border-radius: 5px;
+  left: 800px;
+  top: -70px;
+}
+ h3{
+    color: white;
+    margin-left: 30px;
+    font-style: oblique;
+}
+h5{
+  color: white;
+  margin-left: 30px;
+  font-size: 12px;
+  font-style: normal;
+}
+#portotop{
+   width: 1000px;
+   min-height: 40px;
+   background-color: #4a4d51;
+   display: inline-block;
+   margin: 0px;
+   padding: 0px;
+
+}
+#por{
+  color:white;
+  font-style: oblique;
+  margin-left: 20px;
+  font-size: 18px;
+}
+#porx{
+  position: relative;
+  color: #e26f0b;
+  left: 850px;
+  top: -30px;
+}
+#portofolio{
+  width: 1000px;
+  min-height: 240px;
+  background-color: #4a4d51;
+  margin: 0px;
+  padding: 0px;
+}
+#porto1 , #porto2 , #porto3 , #porto4{
+
+  min-height: 280px;
+  width: 240px;
+  display: inline-block;
+  vertical-align: top;
+}
+#imgpor1 ,#imgpor2 ,#imgpor3 ,#imgpor4{
+  border: 5px solid grey;
+  margin-left: 20px;
+}
+#desc1 , #desc2 , #desc3, #desc4{
+   position: relative;
+   color: #e26f0b;
+   margin-left: 10px;
+   font-size: 14px;
+}

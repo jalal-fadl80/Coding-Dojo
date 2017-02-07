@@ -1,0 +1,21 @@
+#right {
+
+    border: 1px solid black;
+
+    display: inline-block;
+
+    width: 400px;
+
+    height: 400px;
+
+}
+
+#back {
+
+    display: none;
+
+    width: 400px;
+
+    height: 400px;
+
+}

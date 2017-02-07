@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in and Registration Form</title>
+</head>
+<body>
+
+		<h4>WELCOME!  {{ request.session.name }} | </h4>
+		<a href="{% url 'users' %}">Home</a> |
+		<a href="/logoff">Log off</a>
+
+
+
+
+		<h3>{{ item.item }} </h3>
+		<h4>Users who added this product /item under their wishlist:</h4>
+
+		{% if item.joiner %}
+
+		<p>{{ item.joiner }}</p>
+
+		{% else %}
+		<p>No user has this product/item unser his/her wishlist, yet!</p>
+		{% endif %}
+
+
+
+</body>
+</html>
